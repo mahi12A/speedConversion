@@ -1,0 +1,29 @@
+
+import java.util.*;
+public class SpeedConverter {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("eter speed in kilo meter per hour");
+		double kiloMeterePerHour = sc.nextDouble();
+		//System.out.println(toMiesPerHour);
+		long i = 
+ toMilesPerHour( kiloMeterePerHour);
+				System.out.println(i);
+		
+		
+
+	}
+public static long toMilesPerHour(double  kiloMeterePerHour)
+{
+	if ( kiloMeterePerHour < 0)
+	{
+		return -1;
+	}
+	else
+	{
+		return Math.round(kiloMeterePerHour * 0.621371);
+	}
+}
+}
+
